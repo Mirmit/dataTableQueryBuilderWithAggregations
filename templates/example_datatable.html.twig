@@ -9,4 +9,24 @@
     <div class="card">
         {{ data_table(products) }}
     </div>
+
+    <h1>Actual count directly from the query builder</h1>
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Category name</th>
+                    <th>Sum sales amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in actualProductCount %}
+                    <tr>
+                        <td>{{ row.categoryName }}</td>
+                        <td>{{ row.salesAmountSum }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 {% endblock %}

@@ -28,6 +28,7 @@ class ExampleDatatableController extends AbstractController
 
         return $this->render('example_datatable.html.twig', [
             'products' => $dataTable->createView(),
+            'actualProductCount' => $productSumQueryBuilder->getQuery()->getResult(),
         ]);
     }
 }
