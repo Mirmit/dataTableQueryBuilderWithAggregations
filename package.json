@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@kreyu/data-table-bundle": "file:vendor/kreyu/data-table-bundle/assets"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

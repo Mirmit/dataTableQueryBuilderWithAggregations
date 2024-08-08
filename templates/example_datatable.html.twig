@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+    <h1>Example Datatable</h1>
+    <div class="card">
+        {{ data_table(products) }}
+    </div>
+{% endblock %}
